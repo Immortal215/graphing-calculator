@@ -4,14 +4,14 @@ import math
 white = (255, 255, 255)
 black = (0, 0, 0)
 
+numArray = []
+operatorArray = []
+
 inputArray = input("Input numbers + operators : ").split()
 for i in inputArray:
     try:
         # fix this stuff
-        if isinstance(int(i), int):
-            print("a")
-        else: 
-            print("b")
-            
+       numArray.append(int(i))
+        
     except TypeError:
-        break
+        operatorArray.append(i)
